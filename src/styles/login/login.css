@@ -1,0 +1,216 @@
+.login {
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+}
+.izquierdo {
+  background: linear-gradient(
+    135deg,
+    var(--burgundy-dark),
+    var(--burgundy-base)
+  );
+
+  max-width: 50%;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.icono-titulo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.icono {
+  background: transparent;
+  margin-right: 2%;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.titulo {
+  padding: 10px;
+}
+
+.titulo p:first-child {
+  color: var(--gold-medium);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.titulo p:last-child {
+  color: var(--gold-medium);
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin: 0;
+}
+.titulo-login {
+  max-width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.titulo-login h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.color-verificacion {
+  color: var(--gold-base); /* o el color que tú quieras */
+}
+
+.texto-login {
+  max-width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.texto-login p {
+  color: white;
+  font-size: 1.2rem;
+}
+.imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%; /* o un ancho específico si lo deseas */
+  height: auto; /* o usa por ejemplo 300px si necesitas altura fija */
+  overflow: hidden; /* oculta el exceso si la imagen es más grande */
+  margin-left: 15%;
+  margin-top: 12%;
+}
+
+.imagen img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover; /* usa 'contain' si prefieres que se vea toda la imagen */
+}
+.derecho {
+  width: 50%;
+  height: 100vh;
+  padding: 2rem 4rem;
+}
+.titulo-derecho {
+  text-align: center;
+  margin-top: 5%;
+}
+.titulo-derecho h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+}
+.texto-derecho {
+  text-align: left;
+  margin-top: 5%;
+}
+.texto-derecho p {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.formulario-login {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.formulario-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: var(--burgundy-base);
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.input-wrapper:focus-within {
+  border-color: var(--burgundy-base);
+}
+
+.input-wrapper i {
+  margin-right: 0.5rem;
+  color: var(--burgundy-base);
+}
+
+.input-wrapper .icon-eye {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.boton-iniciar {
+  background-color: var(--burgundy-base);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-iniciar:hover {
+  background-color: var(--burgundy-dark);
+}
+
+.acciones-login {
+  text-align: center;
+}
+
+.acciones-login a {
+  color: var(--burgundy-base);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.crear-cuenta {
+  text-align: center;
+  margin-top: 1rem;
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.crear-cuenta a {
+  color: var(--burgundy-base);
+  font-weight: bold;
+  text-decoration: none;
+}
+.texto-bajo {
+  text-align: center;
+}
+.texto-bajo p {
+  color: #aaa;
+}
+.input-wrapper .icon-eye {
+  margin-left: auto;
+  color: var(--burgundy-base);
+  cursor: pointer;
+}

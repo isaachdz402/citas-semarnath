@@ -1,0 +1,126 @@
+.contenedor-cards {
+  display: flex; /* Flexbox */
+  gap: 9%; /* Espacio entre elementos (Bootstrap gap-5 ≈ 3rem) */
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+.contendor-instrucciones {
+  display: flex; /* Flexbox */
+  gap: 5%; /* Espacio entre elementos (Bootstrap gap-5 ≈ 3rem) */
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: auto;
+}
+/* =============================
+   🧩 Estilos directorios
+============================= */
+.directorio {
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.texto-directorio {
+  display: block;
+  align-items: flex-start;
+}
+.texto-directorio h5 {
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.texto-directorio p {
+  color: black;
+
+  margin: 0;
+  padding: 0;
+}
+.botones {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.botones button {
+  background: transparent;
+  border: 2px solid #b0b0b0;
+  color: black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+.botones button:hover {
+  background: var(--burgundy-base);
+  color: white;
+  border-color: var(--burgundy-base);
+}
+.icono-boton {
+  margin-right: 8px;
+}
+/* =============================
+   🧩 Estilos footer
+============================= */
+.footer {
+  background-color: var(--burgundy-dark); /* Guinda */
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px 0 60px;
+}
+
+.footer-contact h5 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer-contact p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact .icon {
+  margin-right: 20px;
+}
+
+.footer-schedule {
+  background-color: transparent;
+  padding: 0px;
+
+  color: white;
+  width: 40%;
+}
+
+.footer-schedule h5 {
+  font-weight: bold;
+}
+
+.schedule-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 10px;
+}
+
+.footer-bottom {
+  background-color: var(--burgundy-dark); /* Azul oscuro */
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #b0b0b0; /* Gris claro */
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.icon {
+  color: var(--gold-medium);
+}

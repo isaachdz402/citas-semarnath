@@ -1,0 +1,144 @@
+.Nav {
+  background: linear-gradient(
+    to left,
+    var(--burgundy-base),
+    var(--burgundy-dark)
+  );
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  padding: 0 10%;
+  z-index: 1000;
+}
+
+.icono-titulo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  padding: 10px;
+  height: 8vh;
+}
+
+.icono {
+  background: transparent;
+  margin-right: 2%;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.titulo {
+  padding: 10px;
+}
+
+.titulo p:first-child {
+  color: var(--gold-medium);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.titulo p:last-child {
+  color: var(--gold-medium);
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.enlaces {
+  list-style: none;
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-link:first-child {
+  border-right: 3px solid var(--gold-medium);
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: var(--gold-medium);
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-right: 5%;
+  color: var(--gold-medium);
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  .menu-icon {
+    display: block;
+  }
+  .icono-titulo {
+    width: 80%;
+  }
+
+  .titulo p:first-child {
+    font-size: 1.5rem;
+  }
+
+  .titulo p:last-child {
+    font-size: 0.8rem;
+  }
+  .enlaces {
+    position: absolute;
+    top: 11vh;
+    right: 0;
+    background: linear-gradient(to left, #691b31, #4a1222);
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    border-radius: 0 0 10px 10px;
+    display: none;
+  }
+
+  .enlaces.active {
+    display: flex;
+  }
+
+  .enlaces li {
+    margin: 15px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .titulo p:first-child {
+    font-size: 1.2rem;
+  }
+
+  .titulo p:last-child {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .titulo p:first-child {
+    font-size: 0.8rem;
+  }
+
+  .titulo p:last-child {
+    font-size: 0.5rem;
+  }
+}

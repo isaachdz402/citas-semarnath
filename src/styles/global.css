@@ -1,0 +1,117 @@
+/* =============================
+   🔤 Tipografía Global: Montserrat
+============================= */
+/* Importa Montserrat desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+/* =============================
+   🎨 Variables de Color Globales
+============================= */
+:root {
+  /* Burgundy variations */
+  --burgundy-dark: #4a1222;
+  --burgundy-base: #691b31;
+  --burgundy-medium: #8b2a47;
+  --burgundy-light: #b85c7a;
+  --burgundy-pale: #d4a0b3;
+
+  /* Gold variations */
+  --gold-dark: #9a7a47;
+  --gold-base: #bc955b;
+  --gold-medium: #d4a96b;
+  --gold-light: #e8c78f;
+  --gold-pale: #f2e0b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* =============================
+   ✨ Estilos Globales
+============================= */
+body {
+  background-color: white;
+  color: var(--burgundy-dark);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--burgundy-medium);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--burgundy-light);
+}
+
+button {
+  background-color: var(--burgundy-base);
+  color: #fff;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--burgundy-medium);
+}
+
+/* input,
+select,
+textarea {
+  border: 1px solid var(--gold-dark);
+  padding: 0.5em;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--burgundy-medium);
+  box-shadow: 0 0 0 2px var(--gold-light);
+} */
+
+/* =============================
+   🧩 Utilidades
+============================= */
+
+.bg-burgundy {
+  background-color: var(--burgundy-base);
+  color: white;
+}
+
+.bg-gold {
+  background-color: var(--gold-base);
+  color: #333;
+}
+
+.text-burgundy {
+  color: var(--burgundy-base);
+}
+
+.text-gold {
+  color: var(--gold-base);
+}
+
+.bg-dorado {
+  background: #bc955b !important;
+  color: #fff !important;
+}
+
+.bg-guinda {
+  background-color: #a02142 !important;
+}
+/* Tablas */
+#tabla_dinamica thead th {
+  background-color: #691b31;
+  color: #fff;
+}

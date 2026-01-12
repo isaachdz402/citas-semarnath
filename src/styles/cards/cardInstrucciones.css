@@ -1,0 +1,70 @@
+.card-instruccion {
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 47.5%;
+  border: 1px solid #bbb;
+}
+.titulo-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* sin espacio entre titulo2 y texto1 */
+}
+
+.titulo2 {
+  display: flex;
+  align-items: center; /* Centra verticalmente icono y texto */
+  gap: 1rem; /* Espacio entre icono y texto */
+  margin-bottom: 0.2rem;
+}
+.titulo2 i {
+  font-size: 1.5rem; /* Asegura que el icono tenga el mismo tamaño que el texto */
+  line-height: 1; /* Evita que el icono se desplace verticalmente */
+  color: black;
+}
+.titulo2 p {
+  margin: 0; /* Elimina márgenes predeterminados del <p> */
+  font-weight: 600; /* Opcional: hace el texto más visible */
+  font-size: 1.5rem;
+  color: black;
+}
+.texto1 {
+  text-align: left;
+  color: black;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.lista-personalizada {
+  list-style-type: disc; /* puntos estándar */
+  padding-left: 1.5rem; /* espacio para los puntos */
+}
+
+.lista-personalizada li {
+  position: relative;
+  margin-bottom: 0.2rem;
+  padding-left: 1rem; /* espacio extra para el punto personalizado */
+  font-size: 1rem;
+}
+
+.lista-personalizada li::marker {
+  font-size: 1.5rem; /* tamaño grande del punto */
+  color: var(--burgundy-dark); /* color personalizado */
+}
+.nuevos {
+  margin-top: 2rem;
+  border-bottom: 2px solid #ccc;
+}
+.nuevos h5 {
+  font-weight: bold;
+}
+
+.usados {
+  margin-top: 2rem;
+}
+.usados h5 {
+  font-weight: bold;
+}
