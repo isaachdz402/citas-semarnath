@@ -3,7 +3,7 @@ name: CI/CD Básico
 on:
   push:
     branches:
-      - main
+      - Isaac_citas
 
 jobs:
   build:
